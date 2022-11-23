@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2930c7c1-b8ae-4042-996d-5e0021cb2c16" name="Changes" comment="" />
+    <list default="true" id="2930c7c1-b8ae-4042-996d-5e0021cb2c16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/Caixa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/Cardapio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/Mesa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/MetodoPagamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/Bebidas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/Garcom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/Sobremesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bebidas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Caixa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cardapio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entrada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Garcom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuDinamico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuDinamico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mesa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PratoPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sobremesa.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HkO0N678fCNRQpzEXEdFMOjoEB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -17,9 +57,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ProjetoRestaurante" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ProjetoRestaurante" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,8 +85,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668825393420</updated>
+      <workItem from="1668825394842" duration="10500000" />
+      <workItem from="1668891759408" duration="22196000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
