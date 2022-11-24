@@ -22,8 +22,10 @@ public class PratoPrincipal extends Item {
 
     @Override
     public String toString() {
-        return "modelo.PratoPrincipal{" +
-                "serveQuantasPessoas=" + serveQuantasPessoas +
-                '}';
+        return "item " + this.getId() + "  |"+
+                "  " + this.getNome() + "  |" +
+                "  R$" + this.getPreco() +"  |"+
+                "  serve até " + this.getServeQuantasPessoas() +
+                "\n_______________________________________________";
     }
 }

@@ -2,23 +2,25 @@ package businessobject;
 
 import java.math.BigDecimal;
 
-public class PagamentoDebitoCredito implements MetodoPagamento{
-
+public class PagamentoDinheiro implements MetodoPagamento{
 
     private boolean statusPagamento;
     private String infoPagamento;
 
-    public PagamentoDebitoCredito() {}
+    public PagamentoDinheiro() {}
 
     @Override
     public MetodoPagamento pagar(BigDecimal valorTotal, BigDecimal valorPago) {
-        BigDecimal valorRestante = valorTotal.subtract(valorPago);
-        if(valorRestante.compareTo(BigDecimal.ZERO) == 0){
+        BigDecimal troco = valorTotal.subtract(valorPago);
+        if(troco.compareTo(BigDecimal.ZERO) == 0){
             this.statusPagamento = true;
-            this.infoPagamento = "Pagamento realizado com sucesso";
-        }else{
+            this.infoPagamento = "Pagamento dinheiro realizado com sucesso";
+        }else if(troco.compareTo(BigDecimal.ZERO)<0){
+            statusPagamento = true;
+            infoPagamento = "Pagamento realizado com sucesso, seu troco é de R$"+troco;
+        }else {
             statusPagamento = false;
-            infoPagamento = "Pagamento não processado, o valor pago é diferente do valor total da conta. \nO valor total da conta foi R$"+valorTotal;
+            infoPagamento = "Pagamento não finalizado, realize o pagamento completo da conta no valor de R$"+valorTotal;
         }
         return this;
     }

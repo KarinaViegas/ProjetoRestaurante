@@ -55,18 +55,18 @@ public class  Cardapio {
 
     public void imprimir(){
 
-        System.out.println("########  Cardápio  #######");
-
-        System.out.println("------- Entrada --------");
+        System.out.println("****************  Cardápio  ****************");
+        System.out.println();
+        System.out.println("################ Entrada ################-");
         imprimirSubItens("Entrada");
 
-        System.out.println("------- Prato Principal --------");
+        System.out.println("################ Prato Principal ################-");
         imprimirSubItens("PratoPrincipal");
 
-        System.out.println("------- Sobremesa --------");
+        System.out.println("################ Sobremesa ################-");
         imprimirSubItens("Sobremesa");
 
-        System.out.println("------- Bebidas --------");
+        System.out.println("################ Bebidas ################-");
         imprimirSubItens("Bebidas");
 
 

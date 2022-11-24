@@ -11,15 +11,11 @@ public class Caixa {
         BigDecimal valorTotal = fecharConta(mesa);
         metodoPagamento = metodoPagamento.pagar(valorTotal, valorPago);
 
-       // metodo de pagamento vai receber (o valor total e o valor pago) ooooook
         if(metodoPagamento.isStatusPagamento()==true){
             mesa.setMesaPaga(true);
             mesa.limparMesa();
-        }else{
-            System.out.println(metodoPagamento.getInfoPagamento());
         }
-
-
+        System.out.println(metodoPagamento.getInfoPagamento());
     }
 
     public static BigDecimal fecharConta(Mesa mesa){

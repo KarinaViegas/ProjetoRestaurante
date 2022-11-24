@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2930c7c1-b8ae-4042-996d-5e0021cb2c16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/businessobject/Caixa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/businessobject/Cardapio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/businessobject/Mesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/businessobject/MetodoPagamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Bebidas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Entrada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Garcom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Sobremesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDinheiro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bebidas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Caixa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cardapio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entrada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Garcom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuDinamico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuDinamico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PratoPrincipal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sobremesa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businessobject/Caixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Caixa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businessobject/Cardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Cardapio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businessobject/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668825393420</updated>
       <workItem from="1668825394842" duration="10500000" />
-      <workItem from="1668891759408" duration="22196000" />
+      <workItem from="1668891759408" duration="26996000" />
     </task>
     <servers />
   </component>

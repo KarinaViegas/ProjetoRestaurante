@@ -16,10 +16,10 @@ public class Mesa {
 
     private List<Item> listaDePedidos = new ArrayList<>();
 
-    public Mesa(Integer numero, Garcom garcom, boolean mesaPaga) {
+    public Mesa(Integer numero, Garcom garcom) {
         this.numero = numero;
         this.garcom = garcom;
-        this.mesaPaga = mesaPaga;
+        this.mesaPaga = false;
 
     }
 
@@ -58,6 +58,7 @@ public class Mesa {
 
     public void addPedidos(Item itemParaAdicionar){
         listaDePedidos.add(itemParaAdicionar);
+        mesaPaga = false;
     }
 
     public void removerItem(Item itemParaRemover){
