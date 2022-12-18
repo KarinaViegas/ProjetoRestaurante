@@ -3,19 +3,17 @@ package businessobject;
 import modelo.Garcom;
 import modelo.Item;
 
-import javax.xml.xpath.XPath;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.math.BigDecimal;
 import java.nio.file.Path;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-import java.util.stream.Stream;
-
 public class Mesa {
 
     private Integer numero;
@@ -38,7 +36,9 @@ public class Mesa {
 
     private long totalPedidos ;
 
-    private Path caminhoArquivo = Path.of("../files");
+
+
+    private BigDecimal valorTotalConta;
 
     public Mesa(Integer numero, Garcom garcom) {
         this.numero = numero;
@@ -125,6 +125,14 @@ public class Mesa {
         this.totalPedidos = totalPedidos;
     }
 
+    public BigDecimal getValorTotalConta() {
+        return valorTotalConta;
+    }
+
+    public void setValorTotalConta(BigDecimal valorTotalConta) {
+        this.valorTotalConta = valorTotalConta;
+    }
+
     public void addPedidos(Item itemParaAdicionar){
         listaDePedidos.add(itemParaAdicionar);
         mesaPaga = false;
@@ -134,9 +142,12 @@ public class Mesa {
         listaDePedidos.remove(itemParaRemover);
     }
 
-    public void limparMesa(){
-        if(mesaPaga == true){
-          //  File arquivoMesa = new FileWriter(caminhoArquivo);
+    public void limparMesa() throws IOException {
+        if(mesaPaga){
+            File file = new File("mesas.txt");
+            var writer = new PrintWriter(new FileWriter(file,true), true);
+            writer.println(this);
+            writer.close();
             listaDePedidos = new ArrayList<>();
             setGarcom(null);
             mesaPaga = false;
@@ -147,7 +158,7 @@ public class Mesa {
 
     @Override
     public String toString() {
-        return "businessobject.Mesa{" +
+        return "{" +
                 "DataHoraAbertura=" + dataHoraAbertura.format(formatoDataHora) +
                 ", numero=" + numero +
                 ", garcom=" + garcom +
@@ -155,6 +166,7 @@ public class Mesa {
                 ", listaDePedidos=" + listaDePedidos +
                 ", dataHoraFechamento=" + dataHoraFechamento.format(formatoDataHora) +
                 ", tempoPermanencia=" + tempoPermanencia +
+                ", Valor Total da Mesa= " + valorTotalConta +
                 '}';
     }
 }
