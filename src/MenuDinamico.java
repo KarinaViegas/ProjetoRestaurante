@@ -38,6 +38,7 @@ public class MenuDinamico {
         mesa3.addPedidos(cardapio.recuperarItemId(2));
         mesa3.addPedidos(cardapio.recuperarItemId(14));
         mesa3.addPedidos(cardapio.recuperarItemId(9));
+        Caixa.parcialConta(mesa3);
         Caixa.imprimirConta(mesa3);
         PagamentoDinheiro dinheiro = new PagamentoDinheiro();
         Caixa.realizarPagamento(mesa3, dinheiro, new BigDecimal("90.0") );
