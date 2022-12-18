@@ -49,6 +49,7 @@ public class Caixa {
         System.out.println(mesa.getTotalPedidos() + " itens pedidos");
         System.out.println("_______________________________________________");
         System.out.printf("O valor total da mesa foi de R$%s reais", totalDaMesa);
+        System.out.println();
         System.out.println("_______________________________________________");
         System.out.println();
     }
@@ -66,6 +67,7 @@ public class Caixa {
         System.out.println(mesa.getTotalPedidos() + " itens pedidos");
         System.out.println("_______________________________________________");
         System.out.printf("O valor parcial da mesa foi de R$%s reais", totalDaMesa);
+        System.out.println();
         System.out.println("_______________________________________________");
         System.out.println();
     }

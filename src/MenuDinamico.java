@@ -8,8 +8,12 @@ public class MenuDinamico {
 
     public static void main(String[] args) {
 
+        var thread1 = new ThreadCardapio();
+        Thread threadCardapio = new Thread(thread1);
+        threadCardapio.start();
+
         Cardapio cardapio = new Cardapio();
-        cardapio.imprimir();
+      //  cardapio.imprimir(); -- Agora está na Thread, rodando em paralelo;
 
 
         Garcom garcom1 = new Garcom("Jão" , "2414" , 0.0);
