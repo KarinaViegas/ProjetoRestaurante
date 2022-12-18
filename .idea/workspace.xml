@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2930c7c1-b8ae-4042-996d-5e0021cb2c16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDinheiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuDinamico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuDinamico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businessobject/Caixa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Caixa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businessobject/Cardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Cardapio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/businessobject/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/Mesa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessobject/PagamentoDebitoCredito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PratoPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +43,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="MenuDinamico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MenuDinamico" />
       <module name="ProjetoRestaurante" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ProjetoRestaurante" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MenuDinamico" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,6 +74,7 @@
       <updated>1668825393420</updated>
       <workItem from="1668825394842" duration="10500000" />
       <workItem from="1668891759408" duration="26996000" />
+      <workItem from="1671367058329" duration="7607000" />
     </task>
     <servers />
   </component>

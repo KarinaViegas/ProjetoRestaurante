@@ -3,8 +3,18 @@ package businessobject;
 import modelo.Garcom;
 import modelo.Item;
 
+import javax.xml.xpath.XPath;
+import java.io.File;
+import java.io.FileWriter;
+import java.nio.file.Path;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Stream;
 
 public class Mesa {
 
@@ -16,10 +26,25 @@ public class Mesa {
 
     private List<Item> listaDePedidos = new ArrayList<>();
 
+    private LocalDateTime dataHoraAbertura;
+
+    private LocalDateTime dataHoraFechamento;
+
+    private long minutes ;
+
+    private Duration tempoPermanencia ;
+
+    private DateTimeFormatter formatoDataHora = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+
+    private long totalPedidos ;
+
+    private Path caminhoArquivo = Path.of("../files");
+
     public Mesa(Integer numero, Garcom garcom) {
         this.numero = numero;
         this.garcom = garcom;
         this.mesaPaga = false;
+        this.dataHoraAbertura = LocalDateTime.now();
 
     }
 
@@ -56,6 +81,50 @@ public class Mesa {
         this.listaDePedidos = listaDePedidos;
     }
 
+    public LocalDateTime getDataHoraAbertura() {
+        return dataHoraAbertura;
+    }
+
+    public void setDataHoraAbertura(LocalDateTime dataHoraAbertura) {
+        this.dataHoraAbertura = dataHoraAbertura;
+    }
+
+    public LocalDateTime getDataHoraFechamento() {
+        return dataHoraFechamento;
+    }
+
+    public Duration getTempoPermanencia() {
+        return tempoPermanencia;
+    }
+
+    public void setTempoPermanencia(Duration tempoPermanencia) {
+        this.tempoPermanencia = tempoPermanencia;
+    }
+
+    public long getMinutes() {
+        return minutes;
+    }
+
+    public void setMinutes(long minutes) {
+        this.minutes = minutes;
+    }
+
+    public void setDataHoraFechamento(LocalDateTime dataHoraFechamento) {
+        this.dataHoraFechamento = dataHoraFechamento;
+    }
+
+    public DateTimeFormatter getFormatoDataHora() {
+        return formatoDataHora;
+    }
+
+    public long getTotalPedidos() {
+        return totalPedidos;
+    }
+
+    public void setTotalPedidos(long totalPedidos) {
+        this.totalPedidos = totalPedidos;
+    }
+
     public void addPedidos(Item itemParaAdicionar){
         listaDePedidos.add(itemParaAdicionar);
         mesaPaga = false;
@@ -67,6 +136,7 @@ public class Mesa {
 
     public void limparMesa(){
         if(mesaPaga == true){
+          //  File arquivoMesa = new FileWriter(caminhoArquivo);
             listaDePedidos = new ArrayList<>();
             setGarcom(null);
             mesaPaga = false;
@@ -78,10 +148,13 @@ public class Mesa {
     @Override
     public String toString() {
         return "businessobject.Mesa{" +
-                "numero=" + numero +
+                "DataHoraAbertura=" + dataHoraAbertura.format(formatoDataHora) +
+                ", numero=" + numero +
                 ", garcom=" + garcom +
                 ", mesaPaga=" + mesaPaga +
                 ", listaDePedidos=" + listaDePedidos +
+                ", dataHoraFechamento=" + dataHoraFechamento.format(formatoDataHora) +
+                ", tempoPermanencia=" + tempoPermanencia +
                 '}';
     }
 }
