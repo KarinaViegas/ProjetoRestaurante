@@ -11,11 +11,11 @@ public class PagamentoDinheiro implements MetodoPagamento{
 
     @Override
     public MetodoPagamento pagar(BigDecimal valorTotal, BigDecimal valorPago) {
-        BigDecimal troco = valorTotal.subtract(valorPago);
+        BigDecimal troco = valorPago.subtract(valorTotal);
         if(troco.compareTo(BigDecimal.ZERO) == 0){
             this.statusPagamento = true;
             this.infoPagamento = "Pagamento dinheiro realizado com sucesso";
-        }else if(troco.compareTo(BigDecimal.ZERO)<0){
+        }else if(troco.compareTo(BigDecimal.ZERO)>0){
             statusPagamento = true;
             infoPagamento = "Pagamento realizado com sucesso, seu troco é de R$"+troco;
         }else {

@@ -82,15 +82,21 @@ public class  Cardapio {
         }
         return null;
     }
-
-
-    public void imprimirSubItens(String nomeClasse){
-        for (Item item: this.itensDoCardapio){
-            if(item.getClass().getSimpleName().equals(nomeClasse)){
+    public void imprimirSubItens(String nomeClasse) {
+        itensDoCardapio.forEach(item -> {
+            if (item.getClass().getSimpleName().equals(nomeClasse)) {
                 System.out.println(item);
             }
-        }
-    }
+        });}
+
+
+//    public void imprimirSubItens(String nomeClasse){
+//        for (Item item: this.itensDoCardapio){
+//            if(item.getClass().getSimpleName().equals(nomeClasse)){
+//                System.out.println(item);
+//            }
+//        }
+//    }
 
 
 
