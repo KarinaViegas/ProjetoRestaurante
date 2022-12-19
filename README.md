@@ -1,6 +1,15 @@
+![image](https://user-images.githubusercontent.com/112840763/194130761-0d22bcd8-e7c7-4a4e-95d9-bc8e5448b679.png)
+
+
+
 # PROJETO: Sistema para Restaurante AdaTech
 
 Projeto desenvolvido para conclusão do módulo Técnicas de Programação I, do curso de JAVA da Let's Code by ADA. 
+
+Projeto desenvolvido por: <br>
+. Karina Viegas <br>
+. Eliane Discacciati <br>
+
 
 Este projeto traz um sistema para restaurante com : 
 
@@ -32,6 +41,3 @@ E métodos que:
 E testes unitários dinâmicos.  <br>
 <br>
 <br>
-Projeto desenvolvido por: <br>
-. Karina Viegas <br>
-. Eliane Discacciati <br>
